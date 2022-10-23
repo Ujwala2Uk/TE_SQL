@@ -7,9 +7,12 @@ FirstName varchar(25),
 LastName varchar(25),
 Email varchar(25)
 )
-drop table kanopi_page
+
 select * from kanopi_page
 set identity_insert kanopi_page on
+
+delete from kanopi_page where Id=7
+drop table kanopi_page
 
 
 
